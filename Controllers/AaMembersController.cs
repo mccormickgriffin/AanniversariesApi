@@ -92,7 +92,7 @@ namespace AanniversariesApi.Controllers
             _context.AaMembers.Add(aaMember);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAaMember", new { id = aaMember.Id }, aaMember);
+            return CreatedAtAction(nameof(GetAaMember), new { id = aaMember.Id }, aaMember);
         }
 
         // DELETE: api/AaMembers/5

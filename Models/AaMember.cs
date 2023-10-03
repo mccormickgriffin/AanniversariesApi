@@ -4,6 +4,8 @@ public class AaMember
     public string Name { get; set; }
     public DateTime SobrietyDate { get; set; }
 
+    public string? Secret { get; set; }
+
     public AaMember(long id, string name, DateTime sobrietyDate)
     {
         Id = id;
